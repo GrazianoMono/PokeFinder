@@ -1,7 +1,12 @@
-import './App.css';
+import './App.scss';
+import SearchPokemon from './views/searchPokemon';
 
 function App() {
-	return <div className="App">Hello world!</div>;
+	return (
+		<div className="App">
+			<SearchPokemon />
+		</div>
+	);
 }
 
 export default App;

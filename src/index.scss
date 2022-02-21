@@ -1,0 +1,76 @@
+* {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 40%;
+
+	@media screen and (min-width: 480px) {
+		font-size: 50%;
+	}
+
+	@media screen and (min-width: 720px) {
+		font-size: 62.5%;
+	}
+
+	@media screen and (min-width: 1080px) {
+		font-size: 70%;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 75%;
+	}
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	font-family: 'Red Hat Mono';
+	background-color: #171717;
+	color: #ededed;
+}
+
+/* red-hat-mono-regular - latin */
+@font-face {
+	font-family: 'Red Hat Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-regular.eot?#iefix')
+			format('embedded-opentype'),
+		/* IE6-IE8 */
+			url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-regular.woff2')
+			format('woff2'),
+		/* Super Modern Browsers */
+			url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-regular.woff')
+			format('woff'),
+		/* Modern Browsers */
+			url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-regular.ttf')
+			format('truetype'),
+		/* Safari, Android, iOS */
+			url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-regular.svg#RedHatMono')
+			format('svg'); /* Legacy iOS */
+}
+/* red-hat-mono-700 - latin */
+@font-face {
+	font-family: 'Red Hat Mono';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-700.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-700.eot?#iefix')
+			format('embedded-opentype'),
+		/* IE6-IE8 */
+			url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-700.woff2')
+			format('woff2'),
+		/* Super Modern Browsers */
+			url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-700.woff')
+			format('woff'),
+		/* Modern Browsers */
+			url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-700.ttf')
+			format('truetype'),
+		/* Safari, Android, iOS */
+			url('./assets/fonts/red-hat-mono-v7-latin/red-hat-mono-v7-latin-700.svg#RedHatMono')
+			format('svg'); /* Legacy iOS */
+}
