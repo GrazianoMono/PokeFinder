@@ -41,9 +41,9 @@ function useGetData() {
 				try {
 					const abilityResponse = await fetch(ability.move.url);
 					const abilityData = await abilityResponse.json();
-					console.log(abilityData);
 					abilities.push(abilityData);
 				} catch (e) {
+					dispatch({ type: 'error', pokemon: data, abilities });
 					console.error(e);
 				}
 			}

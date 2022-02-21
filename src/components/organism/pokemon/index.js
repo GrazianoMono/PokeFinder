@@ -8,7 +8,9 @@ function Pokemon({ pokemon, abilities }) {
 		<div className="pokemon">
 			{pokemon && (
 				<>
-					<h2 className="pokemon__name">{pokemon.name}</h2>
+					<h2 className="pokemon__name">
+						{pokemon.name + ' ' + pokemon.order}
+					</h2>
 					<PokeAvatar
 						src={pokemon.sprites.front_default}></PokeAvatar>
 					<Abilities abilities={abilities}></Abilities>

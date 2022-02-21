@@ -10,7 +10,6 @@ function SearchPokemon() {
 
 	const onSearch = () => {
 		fetchData(search);
-		console.log(state);
 	};
 
 	const [search, setSearch] = useState('');
